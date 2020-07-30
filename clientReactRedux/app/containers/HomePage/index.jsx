@@ -221,6 +221,13 @@ const HomePage = (props) => {
 
   const handleOpen = () => {
     setOpen(true);
+    if(desertName !== '' || !protein || !carboHydrate || !fat || !calorie) {
+      setDesertName('');
+      setProtein(null);
+      setCarboHydrate(null);
+      setFat(null);
+      setCalorie(null);
+    }
   };
 
   const handleClose = () => {
